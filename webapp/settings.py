@@ -24,7 +24,7 @@ SECRET_KEY = 'tr-1alp*gpi8o*6g_2h5_^ez^k=85yjmq6pl51wy6s71fs_m_p'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 INSTALLED_APPS = [
@@ -86,12 +86,23 @@ WSGI_APPLICATION = 'webapp.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
+
+## For Heroku
+import dj_database_url
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+    'default': dj_database_url.config(
+        default='sqlite:////{0}'.format(os.path.join(BASE_DIR, 'db.sqlite3'))
+    )
 }
+
+
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
@@ -129,13 +140,15 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
-STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
+STATIC_ROOT = os.path.join(PROJECT_DIR, 'staticfiles')
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
+STATICFILES_STORAGE = 'whitenose.django.GzipManifestStaticFilesStorage'
+
+
 
 # cors
-
 CORS_ORIGIN_ALLOW_ALL = True
 
 CORS_ORIGIN_WHITELIST = (

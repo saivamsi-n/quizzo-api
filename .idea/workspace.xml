@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="827cd8f0-47f7-4f48-8088-47fc2df9534f" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test.csv" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/settings.py" afterPath="$PROJECT_DIR$/webapp/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/wsgi.py" afterPath="$PROJECT_DIR$/webapp/wsgi.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,34 +20,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="get_user_info.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/quizzo/views/get_user_info/get_user_info.py">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/webapp/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="12" column="43" lean-forward="false" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+            <state relative-caret-position="187">
+              <caret line="151" column="0" lean-forward="false" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="quiz_attempt.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/quizzo/views/quiz_attempt/quiz_attempt.py">
+      <file leaf-file-name="runtime.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/runtime.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="5" column="45" lean-forward="false" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+            <state relative-caret-position="0">
+              <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="quiz_statistics.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/quizzo/views/quiz_statistics/quiz_statistics.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="73">
-              <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#46#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -60,7 +52,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="update_teacher_profile.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="update_teacher_profile.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/quizzo/views/update_teacher_profile/update_teacher_profile.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="56">
@@ -72,11 +64,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="student_login.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/quizzo/views/student_login/student_login.py">
+      <file leaf-file-name="Procfile" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Procfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="74">
-              <caret line="14" column="33" lean-forward="false" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+            <state relative-caret-position="0">
+              <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wsgi.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/wsgi.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="179">
+              <caret line="17" column="46" lean-forward="false" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -118,16 +130,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="student_quiz_list.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/quizzo/views/student_quiz_list/student_quiz_list.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="73">
-              <caret line="24" column="24" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -140,9 +142,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>users</find>
-      <find>QuestionOptionListType</find>
-      <find>IdNameType</find>
       <find>next</find>
       <find>mar</find>
       <find>DateTime</find>
@@ -170,6 +169,9 @@
       <find>teacher_obj</find>
       <find>quiz_attempt</find>
       <find>print</find>
+      <find>allowed</find>
+      <find>data</find>
+      <find>white</find>
     </findStrings>
     <replaceStrings>
       <replace>quiz_questions</replace>
@@ -210,10 +212,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/quizzo/views/get_leaderboard/get_leaderboard.py" />
-        <option value="$PROJECT_DIR$/quizzo/views/get_leaderboard/tests/test_case_01.py" />
-        <option value="$PROJECT_DIR$/quizzo/views/get_next_quiz_details/tests/test_case_02.py" />
-        <option value="$PROJECT_DIR$/quizzo/views/get_quiz/tests/test_case_01.py" />
         <option value="$PROJECT_DIR$/quizzo/views/get_quiz/tests/test_case_02.py" />
         <option value="$PROJECT_DIR$/quizzo/views/quiz_attempt/tests.py" />
         <option value="$PROJECT_DIR$/quizzo/views/student_signup/tests/test_case_01.py" />
@@ -252,7 +250,6 @@
         <option value="$PROJECT_DIR$/quizzo/views/get_next_quiz_details/tests/test_case_01.py" />
         <option value="$PROJECT_DIR$/quizzo/urls.py" />
         <option value="$PROJECT_DIR$/database.sqlite3" />
-        <option value="$PROJECT_DIR$/webapp/settings.py" />
         <option value="$PROJECT_DIR$/quizzo/views/check_quizdate/check_quizdate.py" />
         <option value="$PROJECT_DIR$/quizzo/views/get_quiz/get_quiz.py" />
         <option value="$PROJECT_DIR$/quizzo/views/quiz_attempt/quiz_attempt.py" />
@@ -261,6 +258,11 @@
         <option value="$PROJECT_DIR$/quizzo/views/teacher_signup/teacher_signup.py" />
         <option value="$PROJECT_DIR$/quizzo/views/update_student_profile/update_student_profile.py" />
         <option value="$PROJECT_DIR$/quizzo/views/update_teacher_profile/update_teacher_profile.py" />
+        <option value="$PROJECT_DIR$/Procfile" />
+        <option value="$PROJECT_DIR$/test.csv" />
+        <option value="$PROJECT_DIR$/runtime.txt" />
+        <option value="$PROJECT_DIR$/webapp/wsgi.py" />
+        <option value="$PROJECT_DIR$/webapp/settings.py" />
       </list>
     </option>
   </component>
@@ -281,7 +283,9 @@
     <option name="width" value="784" />
     <option name="height" value="1342" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -309,90 +313,7 @@
             <path>
               <item name="webapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="quizzo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="quizzo" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="quizzo" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="get_students_list" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="quizzo" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="get_user_info" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="quizzo" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="quiz_attempt" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="quizzo" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="quiz_statistics" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="quizzo" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="student_login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="quizzo" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="student_quiz_list" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="quizzo" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="student_signup" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="quizzo" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher_login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="quizzo" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="teacher_signup" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="quizzo" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="update_student_profile" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="quizzo" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="update_teacher_profile" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -470,7 +391,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.290469" sideWeight="0.48019803" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.290469" sideWeight="0.48019803" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66939443" sideWeight="0.5060514" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -478,7 +399,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5188216" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.512275" sideWeight="0.49394855" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.512275" sideWeight="0.49394855" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27987897" sideWeight="0.519802" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -510,28 +431,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/webapp/templates/quizzo/sample.html" />
-    <entry file="file://$PROJECT_DIR$/quizzo/models/upload.py" />
-    <entry file="file://$PROJECT_DIR$/quizzo/models/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="15" column="14" lean-forward="false" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quizzo/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/quizzo/forms.py" />
     <entry file="file://$PROJECT_DIR$/quizzo/utils/user_check.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -761,26 +660,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database.sqlite3">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="100" column="52" lean-forward="false" selection-start-line="100" selection-start-column="52" selection-end-line="100" selection-end-column="52" />
           <folding />
         </state>
       </provider>
@@ -944,6 +827,54 @@
           <folding>
             <element signature="e#0#46#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runtime.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="17" column="46" lean-forward="false" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="151" column="0" lean-forward="false" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
