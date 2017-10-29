@@ -1,0 +1,37 @@
+# Pycharm
+.idea/
+.ipynb_checkpoints/
+
+# Vimg
+
+*~
+*.swp
+*.swo
+
+
+env_*
+
+# Basics
+*.pyc
+__pycache__
+# *.ipynb
+
+
+.venv/
+
+.coverage
+ipython/
+
+
+media/
+
+*.ipynb
+
+*.fuse*
+virtual_environment/
+
+# Build Folders
+*/build/*
+
+# Docs Folders
+docs/*

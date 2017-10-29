@@ -6,7 +6,8 @@ from rest_framework.response import Response
 def next_quiz(request):
     from quizzo.models.quiz import Quiz
     next_quiz_obj = Quiz.get_next_quiz()
-    time = next_quiz_obj.time.strftime('%m/%d/%Y')
+    time = next_quiz_obj.time.strftime('%m/%d/%Y %H:%M:%S')
+    print(time)
     from quizzo.utils.date_time_functions import format_date_string
     time = format_date_string(time)
     quiz = {
