@@ -3,12 +3,12 @@ from rest_framework.response import Response
 
 
 @api_view(['POST'])
-def update_student_profile(request,username):
+def update_student_profile(request, username):
     from quizzo.serializers.student_profile import StudentProfileSerializer
     from quizzo.utils.deserialize import deserialize
     student_obj = deserialize(StudentProfileSerializer, request.data)
     from quizzo.models.student import Student
-    student = Student.update_profile(student_obj,username)
+    student = Student.update_profile(student_obj, username)
     student_obj = {
         "id": student.id,
         "username": student.user,

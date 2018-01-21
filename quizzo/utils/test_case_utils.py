@@ -8,6 +8,7 @@ def create_student(username):
                                          last_name="last_test")
     return student_obj
 
+
 def create_teacher(username):
     from quizzo.models.teacher import Teacher
     from django.contrib.auth.models import User

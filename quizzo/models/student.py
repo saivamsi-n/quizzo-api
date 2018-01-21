@@ -85,7 +85,7 @@ class Student(models.Model):
             raise NotFound("Student not found")
 
     @classmethod
-    def update_profile(cls, request_data,username):
+    def update_profile(cls, request_data, username):
         try:
             from django.db import transaction
             with transaction.atomic():
@@ -98,13 +98,13 @@ class Student(models.Model):
                 if student_obj.username != request_data.username:
                     from quizzo.utils.user_check import check_username_present
                     check_username_present(request_data.username)
-                student_obj.user=user_obj
-                student_obj.username=request_data.username
-                student_obj.email=request_data.email
-                student_obj.first_name=request_data.first_name
-                student_obj.last_name=request_data.last_name
-                student_obj.standard=request_data.standard
-                student_obj.school=request_data.school
+                student_obj.user = user_obj
+                student_obj.username = request_data.username
+                student_obj.email = request_data.email
+                student_obj.first_name = request_data.first_name
+                student_obj.last_name = request_data.last_name
+                student_obj.standard = request_data.standard
+                student_obj.school = request_data.school
                 student_obj.save()
                 return student_obj
         except:

@@ -16,6 +16,7 @@ from quizzo.views.quiz_statistics.quiz_statistics import quiz_statistics
 from quizzo.views.get_user_info.get_user_info import get_user_info
 from quizzo.views.update_student_profile.update_student_profile import update_student_profile
 from quizzo.views.update_teacher_profile.update_teacher_profile import update_teacher_profile
+
 urlpatterns = [
     url(r'^student/signup/$', student_signup, name="student_signup"),
     url(r'^teacher/signup/$', teacher_signup, name="teacher_signup"),

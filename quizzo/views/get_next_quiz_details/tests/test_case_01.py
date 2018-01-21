@@ -4,6 +4,7 @@ from django.test import TestCase
 from rest_framework.test import APIClient
 from mock import mock
 
+
 class GetNextQuizDetailsAPITestCase01(TestCase):
     '''
     Test case to check the attempt status of student of a particular quiz if student didn't take the test.
@@ -12,7 +13,6 @@ class GetNextQuizDetailsAPITestCase01(TestCase):
     def setUp(self):
         from quizzo.utils.test_case_utils import create_quiz
         self.quiz_obj = create_quiz("quiz1")
-
 
     def test_case(self):
         # get API response

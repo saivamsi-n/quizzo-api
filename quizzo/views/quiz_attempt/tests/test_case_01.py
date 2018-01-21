@@ -18,7 +18,7 @@ class QuizAttemptAPITestCase01(TestCase):
         # get API response
         client = APIClient()
         request = {"total": 0, "quiz_question": 0}
-        url = reverse('quiz_attempt',kwargs={'username':self.student_obj.id,"quiz_id":self.quiz_obj.id})
+        url = reverse('quiz_attempt', kwargs={'username': self.student_obj.id, "quiz_id": self.quiz_obj.id})
 
         response = self.client.post(url, content_type='application/json', data=request, format='json')
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)

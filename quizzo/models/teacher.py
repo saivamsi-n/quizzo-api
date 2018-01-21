@@ -97,4 +97,3 @@ class Teacher(models.Model):
                 return teacher_obj
         except:
             raise ParseError("Teacher Profile cannot be Updated")
-

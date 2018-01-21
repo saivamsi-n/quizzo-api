@@ -6,7 +6,6 @@ from rest_framework.test import APIClient
 
 class TeacherSignupAPITestCase01(TestCase):
 
-
     def setUp(self):
         from quizzo.utils.test_case_utils import create_student
         self.student_obj = create_student("test1")

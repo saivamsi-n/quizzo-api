@@ -14,6 +14,6 @@ class TeacherProfileUpdateAPITestCase01(TestCase):
         # get API response
         client = APIClient()
         request = {}
-        url = reverse('teacher_profile_update',kwargs={'username':self.teacher_obj.username})
+        url = reverse('teacher_profile_update', kwargs={'username': self.teacher_obj.username})
         response = self.client.post(url, content_type='application/json', data=request, format='json')
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)

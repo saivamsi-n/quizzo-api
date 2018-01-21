@@ -4,11 +4,12 @@ from quizzo.utils.deserialize import deserialize
 
 
 class QuizResponseType(object):
-    def __init__(self, quiz_questions=None, total=None, title=None, description=None, **kwargs):
+    def __init__(self, quiz_questions=None, total=None, title=None, description=None, duration=None, **kwargs):
         self.quiz_questions = quiz_questions
         self.total = total
         self.title = title
         self.description = description
+        self.duration = duration
 
     def __unicode__(self):
         return str(self)
@@ -26,6 +27,7 @@ class QuizResponseSerializer(serializers.Serializer):
     total = serializers.IntegerField()
     description = serializers.CharField()
     title = serializers.CharField()
+    duration = serializers.IntegerField()
 
     def create(self, validated_data):
         print(validated_data)

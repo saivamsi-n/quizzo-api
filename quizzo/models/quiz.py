@@ -9,6 +9,7 @@ class Quiz(models.Model):
     description = models.CharField(max_length=100)
     questions = models.ManyToManyField(Question)
     time = models.DateTimeField(blank=True)
+    duration = models.IntegerField(default=10)
 
     def __str__(self):
         return str(self.id)
