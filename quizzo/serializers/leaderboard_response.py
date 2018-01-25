@@ -2,10 +2,10 @@ from rest_framework import serializers
 
 
 class LeaderboardResponseType(object):
-    def __init__(self, points, school, username=None, **kwargs):
+    def __init__(self, points, college, username=None, **kwargs):
         self.username = username
         self.points = points
-        self.school = school
+        self.college = college
 
     def __unicode__(self):
         return str(self)
@@ -20,7 +20,7 @@ class LeaderboardResponseType(object):
 class LeaderboardResponseSerializer(serializers.Serializer):
     username = serializers.CharField(required=False, allow_blank=True)
     points = serializers.IntegerField(required=True)
-    school = serializers.CharField(required=True)
+    college = serializers.CharField(required=True)
 
     def create(self, validated_data):
         return LeaderboardResponseType(**validated_data)
