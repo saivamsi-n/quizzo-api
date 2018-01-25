@@ -13,6 +13,22 @@ admin.site.register(StudentQuizAttempt)
 admin.site.register(StudentQuiz)
 admin.site.register(Student)
 admin.site.register(Teacher)
-admin.site.register(Quiz)
-admin.site.register(Question)
-admin.site.register(Option)
+
+class QuizAdmin(admin.ModelAdmin):
+    list_display = ('id',
+                    'title',
+                    'description',
+                    'time',
+                    'duration')
+admin.site.register(Quiz,QuizAdmin)
+
+
+class QuestionAdmin(admin.ModelAdmin):
+    list_display = ('id',
+                    'question_content')
+admin.site.register(Question,QuestionAdmin)
+
+class OptionAdmin(admin.ModelAdmin):
+    list_display = ('id',
+                    'content')
+admin.site.register(Option,OptionAdmin)
