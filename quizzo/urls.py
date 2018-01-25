@@ -24,7 +24,7 @@ urlpatterns = [
     url(r'^teacher/login/$', teacher_login, name="teacher_login"),
     url(r'^quiz/next/$', next_quiz, name="next_quiz"),
     url(r'^quiz/check/$', check_quiz_present, name='check_quiz'),
-    url(r'^students/$', get_student_list, name="students_list"),
+    url(r'^students/list/$', get_student_list, name="students_list"),
     url(r'^student/(?P<username>\w+)/quiz/(?P<quiz_id>\d+)/check/$', quizdate_attempt_check, name="quiz_date_check"),
     url(r'^student/(?P<username>\w+)/quiz/(?P<quiz_id>\d+)/$', check_student_quiz_attempt,
         name="student_quiz_attempt_check"),
