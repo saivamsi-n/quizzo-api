@@ -28,7 +28,7 @@ def get_quiz(request, username, quiz_id):
         "quiz_questions": quiz_questions,
         "description": quiz_obj.description,
         "title": quiz_obj.title,
-        "duration": quiz_obj.duration
+        "duration": quiz_obj.duration,
     }
     from quizzo.serializers.quiz_response import QuizResponseType
     final_obj = QuizResponseType(**quiz_dict)

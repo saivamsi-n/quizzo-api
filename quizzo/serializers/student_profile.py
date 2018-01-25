@@ -2,14 +2,14 @@ from rest_framework import serializers
 
 
 class StudentProfileType(object):
-    def __init__(self, username, first_name, last_name, email, password, standard, school, **kwargs):
+    def __init__(self, username, first_name, last_name, email, password, year, college, **kwargs):
         self.username = username
         self.first_name = first_name
         self.last_name = last_name
         self.email = email
         self.password = password
-        self.standard = standard
-        self.school = school
+        self.year = year
+        self.college = college
 
     def __unicode__(self):
         return str(self)
@@ -25,8 +25,8 @@ class StudentProfileSerializer(serializers.Serializer):
     username = serializers.CharField()
     first_name = serializers.CharField()
     last_name = serializers.CharField()
-    school = serializers.CharField()
-    standard = serializers.CharField()
+    college = serializers.CharField()
+    year = serializers.CharField()
     email = serializers.CharField()
     password = serializers.CharField()
 

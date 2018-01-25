@@ -12,7 +12,7 @@ class Teacher(models.Model):
     email = models.EmailField()
     first_name = models.CharField(max_length=30)
     last_name = models.CharField(max_length=30)
-    school = models.CharField(max_length=100)
+    college = models.CharField(max_length=100)
     username = models.CharField(max_length=100)
     city = models.CharField(max_length=100)
 
@@ -39,7 +39,7 @@ class Teacher(models.Model):
                     email=request_data.email,
                     first_name=request_data.first_name,
                     last_name=request_data.last_name,
-                    school=request_data.school
+                    college=request_data.college
                 )
         except Exception as e:
             raise e
@@ -61,7 +61,7 @@ class Teacher(models.Model):
             teacher_obj = cls.objects.get(id=id)
             obj = {
                 "username": teacher_obj.username,
-                "school": teacher_obj.school,
+                "college": teacher_obj.college,
                 "first_name": teacher_obj.first_name,
                 "last_name": teacher_obj.last_name,
                 "city": teacher_obj.city,
@@ -92,7 +92,7 @@ class Teacher(models.Model):
                 teacher_obj.first_name = request_data.first_name
                 teacher_obj.last_name = request_data.last_name
                 teacher_obj.standard = request_data.standard
-                teacher_obj.school = request_data.school
+                teacher_obj.college = request_data.college
                 teacher_obj.save()
                 return teacher_obj
         except:

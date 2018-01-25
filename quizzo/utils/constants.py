@@ -10,9 +10,9 @@ OptionChoices = [(e.value, e.value) for e in OptionTypes]
 
 
 class LeaderBoardSearchTypes(Enum):
-    school = "School"
+    year = "Year"
     all = "All"
-    city = "City"
+    college = "College"
 
 
 OptionChoices = [(e.value, e.value) for e in OptionTypes]

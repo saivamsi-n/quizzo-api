@@ -2,13 +2,13 @@ from rest_framework import serializers
 
 
 class ProfileType(object):
-    def __init__(self, username, first_name, last_name, email, city, school, user_type, standard=None, **kwargs):
+    def __init__(self, username, first_name, last_name, email, city, college, user_type, year=None, **kwargs):
         self.username = username
         self.first_name = first_name
         self.last_name = last_name
         self.email = email
-        self.standard = standard
-        self.school = school
+        self.year = year
+        self.college = college
         self.city = city
         self.user_type = user_type
 
@@ -26,8 +26,8 @@ class ProfileSerializer(serializers.Serializer):
     username = serializers.CharField()
     first_name = serializers.CharField()
     last_name = serializers.CharField()
-    school = serializers.CharField()
-    standard = serializers.CharField(required=False)
+    college = serializers.CharField()
+    year = serializers.CharField(required=False)
     email = serializers.CharField()
     city = serializers.CharField()
     user_type = serializers.CharField()

@@ -9,8 +9,8 @@ def get_leaderboard(request):
     from quizzo.utils.deserialize import deserialize
     request_data = deserialize(LimitOffsetSearchSerializer, request.data)
     from quizzo.utils.constants import LeaderBoardSearchTypes
-    if request_data.filter_by == LeaderBoardSearchTypes.school.value:
-        student_query_set = Student.objects.filter(school__icontains=request_data.search)
+    if request_data.filter_by == LeaderBoardSearchTypes.college.value:
+        student_query_set = Student.objects.filter(college__icontains=request_data.search)
     elif request_data.filter_by == LeaderBoardSearchTypes.city.value:
         student_query_set = Student.objects.filter(city__icontains=request_data.search)
     else:
@@ -20,7 +20,7 @@ def get_leaderboard(request):
     from django.db.models import Sum
     for obj in student_query_set:
         q = obj.studentquiz_set.aggregate(total_marks=Sum("marks_obtained"))
-        temp = {"username": obj.username, "school": obj.school, "points": q['total_marks']}
+        temp = {"username": obj.username, "college": obj.college, "points": q['total_marks']}
         final_result_list.append(temp)
     final_result_list[:] = [d for d in final_result_list if d.get('points') is not None]
     final_result_list = sorted(final_result_list, key=lambda k: k['points'], reverse=True)

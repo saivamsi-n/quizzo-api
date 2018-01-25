@@ -13,8 +13,8 @@ class Student(models.Model):
     first_name = models.CharField(max_length=30)
     last_name = models.CharField(max_length=30)
     username = models.CharField(max_length=30)
-    standard = models.IntegerField()
-    school = models.CharField(max_length=100)
+    year = models.IntegerField()
+    college = models.CharField(max_length=100)
     city = models.CharField(max_length=100)
 
     def __str__(self):
@@ -41,8 +41,8 @@ class Student(models.Model):
                     email=request_data.email,
                     first_name=request_data.first_name,
                     last_name=request_data.last_name,
-                    standard=request_data.standard,
-                    school=request_data.school
+                    year=request_data.year,
+                    college=request_data.college
                 )
         except:
             raise ParseError("Student cannot be registered")
@@ -72,8 +72,8 @@ class Student(models.Model):
             student_obj = cls.objects.get(id=id)
             obj = {
                 "username": student_obj.username,
-                "school": student_obj.school,
-                "standard": student_obj.standard,
+                "college": student_obj.college,
+                "year": student_obj.year,
                 "first_name": student_obj.first_name,
                 "last_name": student_obj.last_name,
                 "city": student_obj.city,
@@ -103,8 +103,8 @@ class Student(models.Model):
                 student_obj.email = request_data.email
                 student_obj.first_name = request_data.first_name
                 student_obj.last_name = request_data.last_name
-                student_obj.standard = request_data.standard
-                student_obj.school = request_data.school
+                student_obj.year = request_data.year
+                student_obj.college = request_data.college
                 student_obj.save()
                 return student_obj
         except:

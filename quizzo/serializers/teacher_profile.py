@@ -2,13 +2,13 @@ from rest_framework import serializers
 
 
 class TeacherProfileType(object):
-    def __init__(self, username, first_name, last_name, email, password, school, **kwargs):
+    def __init__(self, username, first_name, last_name, email, password, college, **kwargs):
         self.username = username
         self.first_name = first_name
         self.last_name = last_name
         self.email = email
         self.password = password
-        self.school = school
+        self.college = college
 
     def __unicode__(self):
         return str(self)
@@ -24,7 +24,7 @@ class TeacherProfileSerializer(serializers.Serializer):
     username = serializers.CharField()
     first_name = serializers.CharField()
     last_name = serializers.CharField()
-    school = serializers.CharField()
+    college = serializers.CharField()
     email = serializers.CharField()
     password = serializers.CharField()
 

@@ -10,10 +10,10 @@ def get_student_list(request):
 
     from quizzo.models.student import Student
     if request_data.filter_by == "all":
-        student_query_set = Student.objects.all().values('id', 'username', 'standard')
+        student_query_set = Student.objects.all().values('id', 'username', 'year')
     else:
         student_query_set = Student.objects.filter(username__icontains=request_data.search).values('id', 'username',
-                                                                                                   'standard')
+                                                                                                   'year')
     total = student_query_set.count()
     students_obj = {
         "total": total,
