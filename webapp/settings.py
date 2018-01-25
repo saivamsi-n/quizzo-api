@@ -107,6 +107,14 @@ DATABASES = {
 }
 
 
+#SECRET_KEY = os.environ.get('SECRET_KEY')
+#DEBUG = os.environ.get('DEBUG', default=False, cast=bool)
+# DATABASES = {
+#     'default': dj_database_url.config(
+#         default=os.environ.get('DATABASE_URL')
+#     )
+# }
+
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
 
